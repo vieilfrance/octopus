@@ -1,0 +1,1 @@
+Octopus is a clean theme for Wordpress. It's clearly picture oriented, responsive and simple.
