@@ -9,29 +9,16 @@
 
 get_header(); ?>
 
-<!--  <div class="container">
-		
-		<div class="row">
- 			<div class="hidden-xs col-sm-2"></div>
- 			<div class="header-title col-xs-12 col-sm-8">
-			<div class="entry-meta">
-				<span class="cat-links"></span>
-			</div>
-				<div <?php post_class()?>>
-					<h1 class="entry-title"><?php single_cat_title(''); ?></h1>
-					<div class="content">
-						<?php echo category_description( ); ?>
-					</div>
-				</div>
-			</div>
- 			<div class="hidden-xs col-sm-2"></div>
-		</div>
-	</div>
- -->	
 	<div class="row">
 			<?php if ( have_posts() ) :?>
-			<?php while (have_posts()) : the_post(); ?>
-				
+			<?php
+			$img_id=0; 
+			$img=array();	
+			while (have_posts()) : the_post(); 
+			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' ); 
+			$img[$img_id]=$image[0];
+			echo "<meta name='twitter:image".$img_id."' content='".$image[0]."'>";
+			?>
 		<div class="col-lg-6">
 			<div>
 			<a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail("medium",array('class' => 'img-responsive img-center')); ?>
@@ -42,7 +29,8 @@ get_header(); ?>
 				<?php the_title_attribute(); ?>
 			</div>
 		</div>
-		<?php endwhile; ?>
+		<?php $img_id++;
+		endwhile; ?>
 	</div>
 <?php else : ?>
 <div id="pagecontent">
@@ -50,6 +38,7 @@ get_header(); ?>
 <p><?php _e('There are no posts to display here.','octopus')?></p>
 </div>
 <?php endif; ?>
+
 
 <?php get_footer(); ?>
 	
