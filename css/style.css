@@ -165,3 +165,8 @@ margin-bottom:1.2em;
 margin-left: 0.4em;
 font-size: 1.2em;
 }
+
+img {
+  max-width:100%
+  height:auto;
+}
