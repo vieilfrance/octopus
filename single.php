@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-  <div class="container">
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //The Loop?>
+<!--   <div class="container">
+ -->		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //The Loop?>
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@vieilfrance">
@@ -28,18 +28,18 @@ get_header(); ?>
 <?php
 		if (has_post_thumbnail()) {
 		// Include the featured content template.
-		get_template_part( 'featured-content' );
+		//get_template_part( 'featured-content' );
 		}
 ?>
 
 	<div class="row">
-	<div class="col-xs-1 col-sm-2"></div>
-	<div class="header-title col-xs-10 col-sm-8 <?php if (has_post_thumbnail()) {echo "featured-header";}?>">
+	<div class="col-xs-1 col-sm-1"></div>
+	<div class="header-title col-xs-10 col-sm-10 <?php /*if (has_post_thumbnail()) {echo "featured-header";} */ ?>">
 
-	<div class="entry-meta">
+<!-- 	<div class="entry-meta">
 			<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.' ) ); ?></span>
 		</div>
-		<div <?php post_class()?>>
+ -->		<div <?php post_class()?>>
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	<div class="content">
@@ -53,12 +53,12 @@ get_header(); ?>
 
 	</div>
 	</div>
-	<div class="col-xs-1 col-sm-2"></div>
+	<div class="col-xs-1 col-sm-1"></div>
 	</div>
 
 <?php endwhile;endif;?>
-	</div>
-
+<!-- 	</div>
+ -->
 <?php
 get_footer();
 ?>
