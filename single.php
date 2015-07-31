@@ -17,12 +17,12 @@ get_header(); ?>
 <meta name="twitter:creator" content="@vieilfrance">
 <meta name="twitter:title" content="<?php wp_title(''); ?>">
 <meta name="twitter:description" content="">
-<meta name="twitter:image:src" content="<?php get_post(); ?>">
+<meta name="twitter:image:src" content="<?php $post_thumbnail_id = get_post_thumbnail_id(); $img_thmb=wp_get_attachment_image_src( $post_thumbnail_id,'large', true); echo $img_thmb[0]; ?>">
 
 <meta property="og:title" content="<?php wp_title(''); ?>" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="<?php get_permalink(); ?>" />
-<meta property="og:image" content="<?php get_post(); ?>" />
+<meta property="og:url" content="<?php the_permalink(); ?>" />
+<meta property="og:image" content="<?php $post_thumbnail_id = get_post_thumbnail_id(); $img_thmb=wp_get_attachment_image_src( $post_thumbnail_id,'large', true); echo $img_thmb[0]; ?>" />
 <meta property="og:article:author" content="@vieilfrance"/>
 
 <?php
