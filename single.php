@@ -16,7 +16,7 @@ get_header(); ?>
 <meta name="twitter:site" content="@vieilfrance">
 <meta name="twitter:creator" content="@vieilfrance">
 <meta name="twitter:title" content="<?php wp_title(''); ?>">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="Photographe">
 <meta name="twitter:image:src" content="<?php $post_thumbnail_id = get_post_thumbnail_id(); $img_thmb=wp_get_attachment_image_src( $post_thumbnail_id,'large', true); echo $img_thmb[0]; ?>">
 
 <meta property="og:title" content="<?php wp_title(''); ?>" />
