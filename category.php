@@ -22,11 +22,11 @@ get_header(); ?>
 		<div class="col-lg-6">
 			<div>
 			<a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail("medium",array('class' => 'img-responsive img-center')); ?>
-			<div class="hover-pic"><h2 class="paragraph-center"><?php the_title_attribute(); ?></h2></div>
+			<div class="hover-pic hidden-xs"><h2 class="paragraph-center"><?php the_title_attribute(); ?></h2></div>
 			</a>
 			</div>
 			<div class="paragraph-under">
-				<?php the_title_attribute(); ?>
+				<div class="visible-xs"><?php the_title_attribute(); ?></div>
 			</div>
 		</div>
 		<?php $img_id++;

@@ -19,7 +19,7 @@
 	  <a href="http://www.flickr.com/photos/vieilfrance" title="flickr"><i class="fa fa-2x fa-flickr"></i></a>
 	  <a href="http://www.instagram.com/vieilfrance" title="instagram"><i class="fa fa-2x fa-instagram"></i></a>
 	  </div>
-		<div>	(c) David Beck / @vieilfrance </div>
+		<div>	&copy; David Beck / @vieilfrance </div>
 		
 		</div>
 	</div>

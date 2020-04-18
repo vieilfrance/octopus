@@ -33,8 +33,8 @@ get_header(); ?>
 ?>
 
 	<div class="row">
-	<div class="hidden-xs col-sm-1"></div>
-	<div class="header-title col-xs-12 col-sm-10 <?php /*if (has_post_thumbnail()) {echo "featured-header";} */ ?>">
+	<div class="hidden-xs col-sm-2"></div>
+	<div class="header-title col-xs-12 col-sm-8 <?php /*if (has_post_thumbnail()) {echo "featured-header";} */ ?>">
 
 <!-- 	<div class="entry-meta">
 			<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.' ) ); ?></span>
@@ -53,7 +53,7 @@ get_header(); ?>
 
 	</div>
 	</div>
-	<div class="hidden-xs col-sm-1"></div>
+	<div class="hidden-xs col-sm-2"></div>
 	</div>
 
 <?php endwhile;endif;?>
