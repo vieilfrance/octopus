@@ -137,7 +137,7 @@ textarea {
 	color:#EEE;
 }
 
-.responsive-img {
+.responsive-img , .aligncenter {
   max-width:100%;
   height:auto;
   padding-top:15px;
