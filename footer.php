@@ -7,22 +7,17 @@
  *
  * @package WordPress
  * @subpackage Octopus
- * @since Octopus 1.0
+ * @since Octopus 2.0
  */
 ?>
-	<footer class="grey-footer">
+	<footer>
 	  <div class="container">
-	  <div class="row footer-center">
+	  <div class="row">
 	  <div class="footer-social">
-	  <a href="http://www.facebook.com/davidbeckphotos" title="facebook"><i class="fa fa-2x fa-facebook-square"></i></a>
-	  <a href="http://www.twitter.com/vieilfrance" title="twitter"><i class="fa fa-2x fa-twitter-square"></i></a>
-	  <a href="http://www.flickr.com/photos/vieilfrance" title="flickr"><i class="fa fa-2x fa-flickr"></i></a>
-	  <a href="http://www.instagram.com/vieilfrance" title="instagram"><i class="fa fa-2x fa-instagram"></i></a>
-	  </div>
-		<div>	&copy; David Beck / @vieilfrance </div>
-		
-		</div>
-	</div>
+		  &copy; David BECK / @vieilfrance 
+		  <a href="http://www.twitter.com/vieilfrance" title="twitter"><i class="fa fa-1x fa-twitter-square"></i></a>
+		  <a href="http://www.instagram.com/vieilfrance" title="instagram"><i class="fa fa-1x fa-instagram"></i></a>
+		</div></div></div>
 	</footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -30,10 +25,10 @@
 	<? 
 if (is_front_page()) { 
   ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.min.css">
+<!--     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owl.carousel.2.0.0-beta.2.4/assets/owl.theme.default.min.css">
     <script src="<?php echo get_template_directory_uri(); ?>/owl.carousel.2.0.0-beta.2.4/owl.carousel.min.js"></script>
-
+ -->
 
 	<script>
 	$(document).ready(function() {
@@ -56,7 +51,7 @@ if (is_front_page()) {
 }
 ?>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/font-awesome-4.3.0/css/font-awesome.min.css" >
-    <script src="<?php echo get_template_directory_uri(); ?>/bootstrap-3.3.4/js/bootstrap.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 
 <?php
 if (is_front_page()) { 
@@ -94,5 +89,8 @@ if (is_category()) {
 }
 ?>
 
+	    </div>
+	  </div>
+	</div>
   </body>
 </html>

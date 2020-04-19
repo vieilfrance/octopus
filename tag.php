@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Category pages
+ * The template for displaying Tag pages
  *
  * @package WordPress
  * @subpackage Octopus
@@ -9,8 +9,11 @@
 
 get_header(); ?>
 
-<?php if ( have_posts() ) :
-$post_count=0;
+<?php if ( have_posts() ) : 
+	single_tag_title( '', false );
+	tag_description();
+
+	$post_count=0;
 ?>
 
 <?php while(have_posts()) : 
@@ -48,12 +51,13 @@ if ($post_count<3) :
 <?php 
 endif;
 
-else : ?>
+ else : ?>
 <div id="pagecontent">
 <h1><?php _e('No posts found','octopus')?></h1>
 <p><?php _e('There are no posts to display here.','octopus')?></p>
 </div>
-<?php endif; ?>
+		<?php endif; ?>
+
+
 
 <?php get_footer(); ?>
-	
