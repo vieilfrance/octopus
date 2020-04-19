@@ -44,7 +44,7 @@ break;
 }
  endwhile; 
 
-if ($post_count<3) :
+if ($post_count<3 && $post_count!=0 ) :
 ?>
 </div>
 
